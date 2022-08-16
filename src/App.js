@@ -1,16 +1,13 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import TopNav from './components/TopNav/TopNav';
 
 function App() {
   return (
-    <>
-      <p>
-        Edit  and save to reload.
-      </p>
-      <button>
-        Learn React
-      </button>
-    </>
+    <BrowserRouter>
+      <TopNav />
+    </BrowserRouter>
+
   );
 }
 

@@ -1,0 +1,61 @@
+$primary: rgba(79, 70, 186, 1);
+$BrightRed: rgba(249, 137, 107, 1);
+$Sand: rgba(253, 188, 100, 1);
+$Blue: rgba(55, 52, 169, 1);
+
+
+.container_nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    align-items: center;
+
+    .logo {
+        font-size: 2rem;
+        color: $primary;
+        text-transform: uppercase;
+
+        span {
+            color: red;
+        }
+    }
+
+    .mainNav {
+
+        .Navlinks {
+            display: flex;
+            gap: 3.5rem;
+
+            a {
+                font-size: 1.1rem;
+                background-color: green;
+            }
+        }
+    }
+
+    .newUser {
+        .Seclinks {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+
+            li {
+                &:nth-child(2) {
+                    padding: 10px 20px;
+                    background-color: $Blue;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    //  Navlinks newUser Seclinks
+}

@@ -1,0 +1,38 @@
+.container_nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  align-items: center;
+}
+.container_nav .logo {
+  font-size: 2rem;
+  color: rgb(79, 70, 186);
+  text-transform: uppercase;
+}
+.container_nav .logo span {
+  color: red;
+}
+.container_nav .mainNav .Navlinks {
+  display: flex;
+  gap: 3.5rem;
+}
+.container_nav .mainNav .Navlinks a {
+  font-size: 1.1rem;
+  background-color: green;
+}
+.container_nav .newUser .Seclinks {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+.container_nav .newUser .Seclinks li:nth-child(2) {
+  padding: 10px 20px;
+  background-color: rgb(55, 52, 169);
+}
+.container_nav .newUser .Seclinks li:nth-child(2) a {
+  color: white;
+}
+.container_nav .newUser .Seclinks a {
+  font-size: 1.1rem;
+}/*# sourceMappingURL=TopNav.css.map */
