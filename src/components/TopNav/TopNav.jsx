@@ -1,28 +1,37 @@
 
 import { Link, NavLink } from 'react-router-dom';
+import {BiMenuAltRight} from 'react-icons/bi'
 import React from 'react';
 import './TopNav.css'
 
 export default function TopNav() {
     return (
         <nav>
-            <div className="container container_nav">
+            <div className=" container_nav">
                 <div className="logo">
                     <Link to='#Header' className='logoLink' >
                         <h1 className="logo">Tee<span>wai</span></h1>
                     </Link>
                 </div>
                 <div className="mainNav">
-                    <ul className="Navlinks">
+                    <ul className="Navlinks hide">
                         <li>
-                            <NavLink to='#Clients'>
-                                Client
+                            <NavLink to='#About'>
+                                About  
                             </NavLink>
-                        </li>
+                            <ul className='secAbout hide'>
+                                
                         <li>
                             <NavLink to='#Values'>
                                 Values
                             </NavLink>
+                        </li>
+                                <li>
+                                <NavLink to='#Clients'>
+                                    Client
+                                </NavLink>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <NavLink to='#Users'>
@@ -54,6 +63,9 @@ export default function TopNav() {
                             </NavLink>
                         </li>
                     </ul>
+                </div>
+                <div className="toggl">
+                <BiMenuAltRight className='toggle show'/>
                 </div>
             </div>
         </nav>

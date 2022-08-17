@@ -1,38 +1,76 @@
-.container_nav {
+nav {
+  width: 85%;
+  margin-inline: auto;
+}
+nav .Navlinks, nav .Seclinks {
+  display: flex;
+  gap: 2rem;
+}
+nav li {
+  padding: 6px 15px;
+}
+nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+nav .container_nav {
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
   border: 1px solid red;
   align-items: center;
 }
-.container_nav .logo {
+nav .container_nav .logo {
   font-size: 2rem;
   color: rgb(79, 70, 186);
   text-transform: uppercase;
 }
-.container_nav .logo span {
+@media screen and (max-width: 900px) {
+  nav .container_nav .logo {
+    font-size: 1.2rem;
+  }
+}
+nav .container_nav .logo span {
   color: red;
 }
-.container_nav .mainNav .Navlinks {
-  display: flex;
-  gap: 3.5rem;
-}
-.container_nav .mainNav .Navlinks a {
-  font-size: 1.1rem;
-  background-color: green;
-}
-.container_nav .newUser .Seclinks {
+nav .container_nav .newUser .Seclinks {
   display: flex;
   align-items: center;
   gap: 3.5rem;
 }
-.container_nav .newUser .Seclinks li:nth-child(2) {
-  padding: 10px 20px;
+nav .container_nav .newUser .Seclinks li:nth-child(2) {
   background-color: rgb(55, 52, 169);
 }
-.container_nav .newUser .Seclinks li:nth-child(2) a {
+nav .container_nav .newUser .Seclinks li:nth-child(2) a {
   color: white;
 }
-.container_nav .newUser .Seclinks a {
-  font-size: 1.1rem;
+@media screen and (max-width: 900px) {
+  nav .container_nav .newUser .Seclinks {
+    justify-content: center;
+    gap: 1rem;
+    transform: scale(0.8);
+  }
+}
+nav .hide {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    width: 90%;
+  }
+  nav .Navlinks {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  nav li {
+    padding: 6px 15px;
+  }
+  nav a {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+nav .toggle {
+  font-size: 2rem;
 }/*# sourceMappingURL=TopNav.css.map */
