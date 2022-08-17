@@ -1,3 +1,52 @@
 h1 {
   color: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.header .leftSide {
+  margin-bottom: 20px;
+}
+.header .leftSide .head {
+  font-size: clamp(1.8rem, 3.1vw, 8rem);
+  color: rgb(55, 52, 169);
+  margin-bottom: 15px;
+}
+.header .leftSide .body {
+  font-size: 1.2rem;
+  color: rgb(102, 102, 109);
+  line-height: 1.8rem;
+  max-width: 750px;
+}
+.header .rightSide {
+  padding: 20px 0px;
+  max-width: 100%;
+  margin: 20px;
+}
+.header .rightSide img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 920px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .header .leftSide {
+    max-width: 650px;
+    padding: 50px 80px;
+  }
+  .header .head {
+    line-height: 3.2rem;
+    max-width: 450px;
+  }
+  .header .body {
+    line-height: 3.2rem;
+    max-width: 500px;
+  }
 }/*# sourceMappingURL=Header.css.map */

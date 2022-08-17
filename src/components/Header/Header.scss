@@ -2,7 +2,67 @@ $primary: rgba(79, 70, 186, 1);
 $BrightRed: rgba(249, 137, 107, 1);
 $Sand: rgba(253, 188, 100, 1);
 $Blue: rgba(55, 52, 169, 1);
+$DarkGrey: rgb(102, 102, 109);
 
 h1 {
     color: red($color: #000000);
+}
+
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid blue;
+
+    .leftSide {
+        margin-bottom: 20px;
+
+        .head {
+            font-size: clamp(1.8rem, 3.1vw, 8rem);
+            color: $Blue;
+            margin-bottom: 15px;
+        }
+
+        .body {
+            font-size: 1.2rem;
+            color: $DarkGrey;
+            line-height: 1.8rem;
+            max-width: 750px;
+        }
+    }
+
+    .rightSide {
+        padding: 20px 0px;
+        max-width: 100%;
+        margin: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (min-width:920px) {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 50px;
+
+        .leftSide {
+            max-width: 650px;
+            padding: 50px 80px;
+        }
+
+        .head {
+            line-height: 3.2rem;
+            max-width: 450px;
+        }
+
+        .body {
+            line-height: 3.2rem;
+            max-width: 500px;
+        }
+
+    }
+
 }

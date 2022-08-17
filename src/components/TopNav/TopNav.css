@@ -1,42 +1,98 @@
 nav {
-  width: 85%;
-  margin-inline: auto;
-}
-nav .Navlinks, nav .Seclinks {
-  display: flex;
-  gap: 2rem;
-}
-nav li {
-  padding: 6px 15px;
-}
-nav a {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-nav .container_nav {
-  margin-top: 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   align-items: center;
+  margin-top: 1.5rem;
+  width: 85%;
+  margin-inline: auto;
+  background-color: white;
+  padding: 10px 30px 25px 30px;
 }
-nav .container_nav .logo {
+@media screen and (max-width: 920px) {
+  nav {
+    width: 100%;
+    box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
+  }
+}
+nav .Navlinks,
+nav .Seclinks {
+  display: flex;
+}
+nav li {
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+nav a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+nav .logo {
   font-size: 2rem;
   color: rgb(79, 70, 186);
   text-transform: uppercase;
 }
-@media screen and (max-width: 900px) {
-  nav .container_nav .logo {
-    font-size: 1.2rem;
+@media screen and (max-width: 920px) {
+  nav .logo {
+    font-size: 1.6rem;
+  }
+  nav .logo .whiteLogo {
+    color: white;
+    padding-left: 10px;
   }
 }
-nav .container_nav .logo span {
+nav .logo span {
   color: red;
+}
+nav .container_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+@media screen and (max-width: 920px) {
+  nav .container_nav {
+    flex-direction: column;
+    width: 70%;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    gap: 0rem;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(55, 52, 169);
+    padding: 70px 0 40px 0;
+    height: 50vh;
+  }
+  nav .container_nav .Navlinks,
+nav .container_nav .newUser {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  nav .container_nav li {
+    padding: 10px 20px;
+  }
+  nav .container_nav li:hover {
+    background-color: white;
+    color: rgb(55, 52, 169);
+  }
+  nav .container_nav li:hover a {
+    color: rgb(55, 52, 169);
+  }
+  nav .container_nav li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  }
 }
 nav .container_nav .newUser .Seclinks {
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 1rem;
 }
 nav .container_nav .newUser .Seclinks li:nth-child(2) {
   background-color: rgb(55, 52, 169);
@@ -44,33 +100,37 @@ nav .container_nav .newUser .Seclinks li:nth-child(2) {
 nav .container_nav .newUser .Seclinks li:nth-child(2) a {
   color: white;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
   nav .container_nav .newUser .Seclinks {
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    transform: scale(0.8);
+  }
+  nav .container_nav .newUser .Seclinks li:nth-child(2) {
+    background-color: white;
+  }
+  nav .container_nav .newUser .Seclinks li:nth-child(2) a {
+    color: rgb(55, 52, 169);
   }
 }
 nav .hide {
   display: none;
 }
-@media screen and (max-width: 900px) {
-  nav {
-    flex-direction: column;
-    width: 90%;
-  }
-  nav .Navlinks {
-    flex-direction: column;
-    gap: 0rem;
-  }
-  nav li {
-    padding: 6px 15px;
-  }
-  nav a {
-    font-size: 0.9rem;
-    font-weight: 500;
+nav .hideOnMobile {
+  display: none;
+}
+@media screen and (min-width: 920px) {
+  nav .hideOnMobile {
+    display: flex;
   }
 }
-nav .toggle {
-  font-size: 2rem;
+nav .toggleBtn {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  nav .toggleBtn {
+    display: block;
+  }
 }/*# sourceMappingURL=TopNav.css.map */
