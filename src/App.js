@@ -5,9 +5,14 @@ import TopNav from './components/TopNav/TopNav';
 
 function App() {
   return (
+
     <BrowserRouter>
       <TopNav />
-      <Header />
+      <Routes>
+        <Route path="/" element={<Header />} />
+      </Routes>
+
+
     </BrowserRouter>
 
   );

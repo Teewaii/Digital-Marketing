@@ -7,7 +7,7 @@ export default function TopNav() {
     return (
         <nav>
             <div className="logo">
-                <Link to='#Header' className='logoLink' >
+                <Link to='/' className='logoLink' >
                     <h1 className="logo ">Tee<span className='redArea'>wai</span></h1>
                 </Link>
             </div>
