@@ -1,1 +1,12 @@
-/*# sourceMappingURL=Value.css.map */
+h1 {
+  color: 0;
+}
+
+.value .top-container .head {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 450px;
+}
+.value .top-container .values {
+  display: flex;
+}/*# sourceMappingURL=Value.css.map */

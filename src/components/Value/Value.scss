@@ -1,0 +1,27 @@
+$primary: rgba(79, 70, 186, 1);
+$BrightRed: rgba(249, 137, 107, 1);
+$Sand: rgba(253, 188, 100, 1);
+$Blue: rgba(55, 52, 169, 1);
+$DarkGrey: rgb(102, 102, 109);
+
+h1 {
+    color: red($color: #000000);
+}
+
+.value {
+
+    .top-container {
+        .head {
+            font-size: 2rem;
+            font-weight: 600;
+            width: 450px;
+        }
+
+        .values {
+            display: flex;
+        }
+    }
+
+}
+
+@media screen and (min-width:920px) {}

@@ -1,6 +1,6 @@
 .container {
   /* padding: 0 80px; */
-  width: 97%;
+  width: 80%;
   margin-inline: auto;
 }
 
@@ -24,6 +24,7 @@
   gap: 2rem;
   border-radius: 5px;
   margin: 25px 0 75px 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width:920px) {
