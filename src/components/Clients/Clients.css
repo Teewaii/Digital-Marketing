@@ -1,1 +1,66 @@
-/*# sourceMappingURL=Clients.css.map */
+h1 {
+  color: 0;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 30px;
+  border: 1px solid rgba(177, 174, 174, 0.2);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-width: 100vw;
+}
+.clients .title {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.clients .clients-logos {
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 25px;
+  align-self: center;
+}
+.clients .clients-logos .C-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 750px) {
+  .clients .clients-logos {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+    align-items: center;
+  }
+  .clients .clients-logos .C-logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .clients .clients-logos {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 80px;
+    align-items: center;
+  }
+  .clients .clients-logos .C-logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}/*# sourceMappingURL=Clients.css.map */

@@ -4,10 +4,12 @@ import headeImage from '../../images/HeaderImage.png'
 import './Header.css'
 export default function Header() {
     return (
-        <section className="header container">
+        <section className="header container" id='header'>
             <div className="leftSide">
+                <div className="desc">
                 <h1 className="head">Increase your followers on social media</h1>
                 <p className="body">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                </div>
                 <button className='btn'>Get Started <span className='rArrow'><HiArrowSmRight /></span></button>
 
                 <div className="joined">

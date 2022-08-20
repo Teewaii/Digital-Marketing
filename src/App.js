@@ -1,20 +1,22 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Clients from './components/Clients/Clients';
 import Header from './components/Header/Header';
 import TopNav from './components/TopNav/TopNav';
 
 function App() {
   return (
+    <>
+      <BrowserRouter>
+        <TopNav />
 
-    <BrowserRouter>
-      <TopNav />
-      <Routes>
-        <Route path="/" element={<Header />} />
-      </Routes>
-
-
-    </BrowserRouter>
-
+        <Routes>
+          <Route index element={<Header />} />
+          <Route path="/" element={<Clients />} />
+        </Routes>
+        <Clients />
+      </BrowserRouter>
+    </>
   );
 }
 

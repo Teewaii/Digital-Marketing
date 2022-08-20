@@ -10,6 +10,7 @@ nav {
   margin-inline: auto;
   background-color: white;
   padding: 10px 30px 25px 30px;
+  z-index: 30;
 }
 @media screen and (max-width: 920px) {
   nav {

@@ -16,7 +16,7 @@ export default function TopNav() {
                 <div className="mainNav">
                     <ul className="Navlinks">
                         <li>
-                            <NavLink to='#About'>
+                            <NavLink to='#'>
                                 About
                             </NavLink>
                             <ul className='secAbout hide'>
