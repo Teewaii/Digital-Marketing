@@ -4,6 +4,7 @@ import secure from '../../images/Secure.png'
 import cookies from '../../images/Cookies.png'
 import login from '../../images/Login_NotRequired.png'
 import MoneyBack from '../../images/Money_Back.png'
+import hero from '../../images/HR_current_Line.png'
 
 export default function Value() {
     return (
@@ -36,10 +37,15 @@ export default function Value() {
                 </div>
             </div>
             <div className="bottom-container">
-                <div className="description">
-                    <h1 className="head">Get thousands of active followers</h1>
-                    <p className="body">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                <div className="leftSide">
+                    <div className="desc">
+                        <h1 className="head">Get thousands of active followers</h1>
+                        <p className="body">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                    </div>
                     <button className='btn'>Start Free</button>
+                </div>
+                <div className="rightSide">
+                    <img src={hero} alt="header image" />
                 </div>
             </div>
         </section>

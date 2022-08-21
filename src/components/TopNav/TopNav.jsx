@@ -5,6 +5,7 @@ import './TopNav.css'
 
 export default function TopNav() {
     return (
+
         <nav>
             <div className="logo">
                 <Link to='/' className='logoLink' >
@@ -70,6 +71,7 @@ export default function TopNav() {
                 <BiMenuAltRight className='toggle show' />
             </div>
         </nav >
+
 
     )
 }

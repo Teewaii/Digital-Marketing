@@ -44,8 +44,8 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  -webkit-animation: slideshow 15s linear infinite;
-          animation: slideshow 15s linear infinite;
+  -webkit-animation: slideshow 10s linear infinite;
+          animation: slideshow 10s linear infinite;
 }
 .clients .slider .clients-logos .C-logo {
   width: -webkit-fit-content;

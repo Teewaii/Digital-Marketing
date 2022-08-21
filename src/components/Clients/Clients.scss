@@ -32,7 +32,7 @@ h1 {
         align-items: center;
         margin-inline: auto;
         // width: 80vw;
-        width: calc(50%*2 );
+        width: calc(50%*2);
         height: 100px;
         background-color: white;
         box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
@@ -40,8 +40,9 @@ h1 {
         -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
         position: relative;
         overflow: hidden;
+
         @media screen and (min-width:800px) {
-            width: calc(230px*6 );
+            width: calc(230px*6);
         }
 
         .clients-logos {
@@ -55,16 +56,16 @@ h1 {
             align-items: center;
             justify-content: center;
             gap: 20px;
-            animation: slideshow 15s linear infinite;
+            animation: slideshow 10s linear infinite;
 
             .C-logo {
                 width: fit-content;
                 width: 60vw;
                 flex-shrink: 0;
-                
+
                 @media screen and (min-width:800px) {
-                 width: 20vw;
-                    
+                    width: 20vw;
+
                 }
             }
         }
@@ -102,7 +103,7 @@ h1 {
         }
     }
 
-   
+
 
     @media screen and (min-width:1000px) {
 

@@ -1,4 +1,3 @@
-
 $primary: rgba(79, 70, 186, 1);
 $BrightRed: rgba(249, 137, 107, 1);
 $Sand: rgba(253, 188, 100, 1);
@@ -10,7 +9,6 @@ h1 {
 }
 
 .value {
-   
     position: relative;
     text-align: center;
 
@@ -25,7 +23,7 @@ h1 {
             font-size: clamp(1.4rem, 3.1vw, 8rem);
             font-weight: 600;
             max-width: 450px;
-            margin-bottom: 50px;         
+            margin-bottom: 50px;
         }
 
         .values {
@@ -33,35 +31,156 @@ h1 {
             flex-direction: column;
             justify-content: center;
 
-            .card{
+            .card {
                 margin-bottom: 30px;
-                
-                .caption, img{
+
+                .caption,
+                img {
                     margin-bottom: 20px;
                 }
-                
-                .caption{
-                   font-size: 1rem;
+
+                .caption {
+                    font-size: 1rem;
                 }
-                .body{
+
+                .body {
                     font-weight: medium;
                 }
             }
         }
     }
 
-}
+    .bottom-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
-@media screen and (min-width:800px) {
-    .value{
-        min-height: 100vh;
+        .leftSide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
 
-        .head {
-            font-size: clamp(1.4rem, 3.1vw, 8rem);
-            font-weight: 600;
-            width: 450px;
-            margin-bottom: 50px;
-            border: 1px solid red;            
+            .btn {
+                margin-inline: auto;
+            }
+
+            .desc {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .head {
+                font-size: clamp(1.6rem, 3.1vw, 8rem);
+                margin: -55px 0 15px 0;
+            }
+
+            .body {
+                font-size: 1.1rem;
+                color: $DarkGrey;
+                line-height: 1.8rem;
+                max-width: 750px;
+            }
+        }
+
+        .rightSide {
+            // padding: 20px 0px;
+            width: 100%;
+            margin: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    @media screen and (min-width:920px) {
+
+        .top-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding-top: 60px;
+
+            .head {
+                font-weight: 600;
+                max-width: 650px;
+                margin-bottom: 50px;
+                text-align: left;
+            }
+
+            .values {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: left;
+
+                .card {
+                    margin-bottom: 30px;
+                    padding: 0 20px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    .caption,
+                    img {
+                        margin-bottom: 10px;
+                    }
+
+                    .caption {
+                        font-size: 1rem;
+                    }
+
+                    .body {
+                        font-weight: medium;
+                    }
+                }
+            }
+
+
+        }
+
+        .bottom-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .leftSide {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+                margin-bottom: 20px;
+                border: 1px solid red;
+                flex-grow: 1;
+
+                .btn {
+                    margin-left: 0;
+                }
+            }
+
+            .rightSide {
+                // padding: 20px 0px;
+                width: 100%;
+                margin: 20px;
+                border: 1px solid red;
+                flex-grow: 1;
+
+                img {
+                    width: 80%;
+                }
+            }
         }
     }
 
