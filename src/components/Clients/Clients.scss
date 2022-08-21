@@ -31,7 +31,8 @@ h1 {
         justify-content: center;
         align-items: center;
         margin-inline: auto;
-        width: 80vw;
+        // width: 80vw;
+        width: calc(50%*2 );
         height: 100px;
         background-color: white;
         box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
@@ -39,6 +40,9 @@ h1 {
         -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
         position: relative;
         overflow: hidden;
+        @media screen and (min-width:800px) {
+            width: calc(230px*6 );
+        }
 
         .clients-logos {
             // column-gap: 25px;
@@ -55,8 +59,13 @@ h1 {
 
             .C-logo {
                 width: fit-content;
-                width: 20vw;
+                width: 60vw;
                 flex-shrink: 0;
+                
+                @media screen and (min-width:800px) {
+                 width: 20vw;
+                    
+                }
             }
         }
 
@@ -66,7 +75,8 @@ h1 {
             }
 
             100% {
-                transform: translateX(-180vw);
+                transform: translateX(calc(-250px*3));
+                // transform: translateX(-180vw);
             }
         }
 
@@ -92,23 +102,7 @@ h1 {
         }
     }
 
-    @media screen and (min-width:750px) {
-
-        // .clients-logos {
-        //     display: grid;
-
-        //     grid-auto-flow: row;
-        //     grid-template-columns: repeat(4, 1fr);
-        //     row-gap: 15px;
-        //     column-gap: 35px;
-        //     align-items: center;
-
-        //     .C-logo {
-        //         width: fit-content;
-        //     }
-        // }
-
-    }
+   
 
     @media screen and (min-width:1000px) {
 

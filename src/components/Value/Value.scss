@@ -1,3 +1,4 @@
+
 $primary: rgba(79, 70, 186, 1);
 $BrightRed: rgba(249, 137, 107, 1);
 $Sand: rgba(253, 188, 100, 1);
@@ -9,19 +10,59 @@ h1 {
 }
 
 .value {
+   
+    position: relative;
+    text-align: center;
 
     .top-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
         .head {
-            font-size: 2rem;
+            font-size: clamp(1.4rem, 3.1vw, 8rem);
             font-weight: 600;
-            width: 450px;
+            max-width: 450px;
+            margin-bottom: 50px;         
         }
 
         .values {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .card{
+                margin-bottom: 30px;
+                
+                .caption, img{
+                    margin-bottom: 20px;
+                }
+                
+                .caption{
+                   font-size: 1rem;
+                }
+                .body{
+                    font-weight: medium;
+                }
+            }
         }
     }
 
 }
 
-@media screen and (min-width:920px) {}
+@media screen and (min-width:800px) {
+    .value{
+        min-height: 100vh;
+
+        .head {
+            font-size: clamp(1.4rem, 3.1vw, 8rem);
+            font-weight: 600;
+            width: 450px;
+            margin-bottom: 50px;
+            border: 1px solid red;            
+        }
+    }
+
+}
