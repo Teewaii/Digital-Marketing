@@ -3,6 +3,7 @@ import './App.css';
 import Clients from './components/Clients/Clients';
 import Header from './components/Header/Header';
 import TopNav from './components/TopNav/TopNav';
+import Users from './components/Users/Users';
 import Value from './components/Value/Value';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         </Routes>
         <Clients />
         <Value />
+        <Users />
      
     </>
   );
