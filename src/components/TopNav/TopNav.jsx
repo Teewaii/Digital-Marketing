@@ -1,12 +1,23 @@
 import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi'
 import React from 'react';
 import './TopNav.css'
 
 export default function TopNav() {
+    const [shadow, setShadow] = useState(false)
+
+    function NavShadow(){
+        if (window.scrollY>=90){
+            setShadow(true)
+        }else{
+            setShadow(false)
+        }
+        }
+    window.addEventListener('scroll', NavShadow)
     return (
 
-        <nav>
+        <nav className={shadow?'navBar Navshadow':'navBar'}>
             <div className="logo">
                 <Link to='/' className='logoLink' >
                     <h1 className="logo ">Tee<span className='redArea'>wai</span></h1>

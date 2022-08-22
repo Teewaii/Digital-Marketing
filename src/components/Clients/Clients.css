@@ -36,7 +36,7 @@ h1 {
 }
 @media screen and (min-width: 800px) {
   .clients .slider {
-    width: 1380px;
+    width: 80%;
   }
 }
 .clients .slider .clients-logos {

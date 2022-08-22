@@ -8,17 +8,17 @@ import Value from './components/Value/Value';
 function App() {
   return (
     <>
-      <Router>
+      
         <TopNav />
 
         <Routes>
           <Route index element={<Header />} />
-          <Route path="/" element={<Clients />} />
-          <Route path="/" element={<Value />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/value" element={<Value />} />
         </Routes>
         <Clients />
         <Value />
-      </Router>
+     
     </>
   );
 }

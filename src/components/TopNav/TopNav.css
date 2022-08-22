@@ -1,4 +1,11 @@
-nav {
+.Navshadow {
+  background-color: blue;
+  box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+.navBar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -6,59 +13,54 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 1.5rem;
+  width: 85%;
   margin-inline: auto;
   background-color: white;
-  padding: 10px 140px 25px 140px;
+  padding: 10px 30px 25px 30px;
   z-index: 30;
-  box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 920px) {
-  nav {
+@media screen and (max-width: 1000px) {
+  .navBar {
     width: 100%;
-    box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
   }
 }
-nav .Navlinks,
-nav .Seclinks {
+.navBar .Navlinks,
+.navBar .Seclinks {
   display: flex;
 }
-nav li {
+.navBar li {
   padding: 8px 18px;
   border-radius: 20px;
 }
-nav a {
+.navBar a {
   font-size: 1rem;
   font-weight: 500;
 }
-nav .logo {
+.navBar .logo {
   font-size: 2rem;
   color: rgb(79, 70, 186);
   text-transform: uppercase;
 }
 @media screen and (max-width: 920px) {
-  nav .logo {
+  .navBar .logo {
     font-size: 1.6rem;
   }
-  nav .logo .whiteLogo {
+  .navBar .logo .whiteLogo {
     color: white;
     padding-left: 10px;
   }
 }
-nav .logo span {
+.navBar .logo span {
   color: red;
 }
-nav .container_nav {
+.navBar .container_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
 }
 @media screen and (max-width: 920px) {
-  nav .container_nav {
+  .navBar .container_nav {
     flex-direction: column;
     width: 70%;
     position: absolute;
@@ -71,69 +73,69 @@ nav .container_nav {
     padding: 70px 0 40px 0;
     height: 50vh;
   }
-  nav .container_nav .Navlinks,
-nav .container_nav .newUser {
+  .navBar .container_nav .Navlinks,
+.navBar .container_nav .newUser {
     flex-direction: column;
     gap: 0rem;
   }
-  nav .container_nav li {
+  .navBar .container_nav li {
     padding: 10px 20px;
   }
-  nav .container_nav li:hover {
+  .navBar .container_nav li:hover {
     background-color: white;
     color: rgb(55, 52, 169);
   }
-  nav .container_nav li:hover a {
+  .navBar .container_nav li:hover a {
     color: rgb(55, 52, 169);
   }
-  nav .container_nav li a {
+  .navBar .container_nav li a {
     font-size: 1rem;
     font-weight: 500;
     color: white;
   }
 }
-nav .container_nav .newUser .Seclinks {
+.navBar .container_nav .newUser .Seclinks {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-nav .container_nav .newUser .Seclinks li:nth-child(2) {
+.navBar .container_nav .newUser .Seclinks li:nth-child(2) {
   background-color: rgb(55, 52, 169);
 }
-nav .container_nav .newUser .Seclinks li:nth-child(2) a {
+.navBar .container_nav .newUser .Seclinks li:nth-child(2) a {
   color: white;
 }
 @media screen and (max-width: 920px) {
-  nav .container_nav .newUser .Seclinks {
+  .navBar .container_nav .newUser .Seclinks {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
   }
-  nav .container_nav .newUser .Seclinks li:nth-child(2) {
+  .navBar .container_nav .newUser .Seclinks li:nth-child(2) {
     background-color: white;
   }
-  nav .container_nav .newUser .Seclinks li:nth-child(2) a {
+  .navBar .container_nav .newUser .Seclinks li:nth-child(2) a {
     color: rgb(55, 52, 169);
   }
 }
-nav .hide {
+.navBar .hide {
   display: none;
 }
-nav .hideOnMobile {
+.navBar .hideOnMobile {
   display: none;
 }
 @media screen and (min-width: 920px) {
-  nav .hideOnMobile {
+  .navBar .hideOnMobile {
     display: flex;
   }
 }
-nav .toggleBtn {
+.navBar .toggleBtn {
   display: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 @media screen and (max-width: 920px) {
-  nav .toggleBtn {
+  .navBar .toggleBtn {
     display: block;
   }
 }/*# sourceMappingURL=TopNav.css.map */

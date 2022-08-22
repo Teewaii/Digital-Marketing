@@ -18,9 +18,10 @@ h1 {
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        
 
         .head {
-            font-size: clamp(1.4rem, 3.1vw, 8rem);
+            font-size: clamp(1.4rem, 2.5vw, 8rem);
             font-weight: 600;
             max-width: 450px;
             margin-bottom: 50px;
@@ -47,7 +48,16 @@ h1 {
                     font-weight: medium;
                 }
             }
-        }
+            @media screen and (min-width:650px) {
+         
+                    display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: left;
+                column-gap: 40px;
+                }
+            }
+        
+        
     }
 
     .bottom-container {
@@ -99,6 +109,7 @@ h1 {
     }
 
 
+ 
     @media screen and (min-width:920px) {
 
         .top-container {
@@ -162,23 +173,27 @@ h1 {
                 justify-content: flex-start;
                 text-align: left;
                 margin-bottom: 20px;
-                border: 1px solid red;
-                flex-grow: 1;
+                flex: 1;
 
                 .btn {
                     margin-left: 0;
                 }
+
+                .body, .head{
+                padding-right: 100px;
+                }
             }
 
             .rightSide {
-                // padding: 20px 0px;
-                width: 100%;
                 margin: 20px;
-                border: 1px solid red;
-                flex-grow: 1;
+                flex: 1;
+                height: 100%;
+                position: relative;
+                
 
                 img {
-                    width: 80%;
+                    width: 100%;
+                    margin-right: -150px;
                 }
             }
         }
