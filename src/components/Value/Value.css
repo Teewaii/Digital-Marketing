@@ -136,13 +136,13 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-bottom: 20px;
     flex: 1;
   }
   .value .bottom-container .leftSide .btn {
     margin-left: 0;
   }
-  .value .bottom-container .leftSide .body, .value .bottom-container .leftSide .head {
+  .value .bottom-container .leftSide .body,
+.value .bottom-container .leftSide .head {
     padding-right: 100px;
   }
   .value .bottom-container .rightSide {
