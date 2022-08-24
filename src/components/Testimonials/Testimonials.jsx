@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
+import stars from '../../images/Stars.png'
+import './Testimonials.css'
+import TestimonialData from '../../Data'
 
+import Users from '../Users/Users'
 export default function Testimonials() {
+  const [star, setStar] = useState(0)
   return (
-    <section className="testimony">
-        <h1 className="title">Testimonial</h1>
-        <h1 className="header">What Our Happy User Says</h1>
-        <div className="reviewsContainer">
-            <div className="reviewCard">
-                <img src="" alt="" />
-                <p className="body"></p>
-                <div className="user">
-                    <img src="" alt="" className="headShot" />
-                    <p className="name"></p>
-                    <span className="post"></span>
-                </div>
+    <section className="testimonial">
+      <h1 className="title">Testimonial</h1>
+      <h1 className="head">What Our Happy User Says</h1>
+      <div className="reviewsContainer container">
+        {TestimonialData.map((testimony) => {
+          return (
+            <div className="reviewCard" key={testimony.id}>
+              <img src={stars} alt="" />
+              <p className="body msg">{testimony.msg}</p>
+
+              <div className="user">
+                < p className="name" > {testimony.name}</p>
+                <img src="https://unsplash.com/Ft4p5E9HjTQ" alt="" className="headShot" />
+
+                <span className="post">{testimony.position}</span>
+              </div>
+
             </div>
-        </div>
-    </section>
+          )
+        })}
+      </div>
+    </section >
   )
 }
