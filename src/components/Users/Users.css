@@ -50,6 +50,8 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-height: 60vh;
+    margin-bottom: 50px;
   }
   .users .leftSide {
     display: flex;

@@ -19,7 +19,7 @@ h1 {
   margin-bottom: 50px;
   text-align: left;
   padding: 0;
-  margin-left: -10px;
+  margin-left: -4px;
 }
 .value .top-container .values {
   display: flex;
@@ -40,10 +40,9 @@ h1 {
 }
 .value .top-container .values .card .body {
   font-weight: medium;
-  min-width: 300px;
   font-size: 1.2rem;
 }
-@media screen and (min-width: 650px) and (max-width: 850px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
   .value .top-container .values {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -78,7 +77,6 @@ h1 {
   font-size: 1.1rem;
   color: rgb(102, 102, 109);
   line-height: 1.8rem;
-  max-width: 750px;
 }
 .value .bottom-container .rightSide {
   width: 100%;
@@ -87,7 +85,7 @@ h1 {
 .value .bottom-container .rightSide img {
   width: 100%;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 900px) {
   .value .top-container {
     display: flex;
     flex-direction: column;
@@ -103,27 +101,24 @@ h1 {
     text-align: left;
   }
   .value .top-container .values {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
     text-align: left;
-    border: 1px solid red;
     gap: 1px;
   }
   .value .top-container .values .card {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    max-width: 380px;
     margin-bottom: 30px;
     padding: 0 20px;
-    border: 1px solid blue;
     transform: scale(0.9);
     margin-right: -20px;
   }
   .value .top-container .values .card:first-child {
     padding-left: 0;
+    margin-left: -15px;
   }
   .value .top-container .values .card .caption,
 .value .top-container .values .card img {
@@ -168,5 +163,10 @@ h1 {
   .value .bottom-container .rightSide img {
     width: 100%;
     margin-right: -150px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .value {
+    min-height: 100vh;
   }
 }/*# sourceMappingURL=Value.css.map */

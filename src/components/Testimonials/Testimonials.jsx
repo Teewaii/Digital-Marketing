@@ -45,6 +45,10 @@ export default function Testimonials() {
     ]
   };
 
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
   return (
     <section className="testimonial">
       <h1 className="title">Testimonial</h1>
