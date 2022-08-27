@@ -19,14 +19,14 @@ h1 {
     .leftSide {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        text-align: center;
+        text-align: left;
         margin-bottom: 20px;
 
-        .btn {
-            margin-inline: auto;
-        }
+        // .btn {
+        //     margin-inline: auto;
+        // }
 
         .desc {
             display: flex;
@@ -47,12 +47,16 @@ h1 {
     }
 
     .rightSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         // padding: 20px 0px;
         width: 100%;
         margin: 20px;
 
         img {
-            width: 100%;
+            width: 120%;
+            margin-bottom: 40px;
         }
     }
 }

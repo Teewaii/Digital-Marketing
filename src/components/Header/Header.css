@@ -6,14 +6,14 @@ h1 {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 .header .leftSide {
   margin-bottom: 20px;
 }
 .header .leftSide .btn {
-  margin-inline: auto;
+  margin-left: 0;
 }
 .header .leftSide .desc {
   display: flex;
@@ -28,7 +28,7 @@ h1 {
   font-size: 1.1rem;
   color: rgb(102, 102, 109);
   line-height: 1.8rem;
-  max-width: 750px;
+  min-width: 300px;
 }
 .header .rightSide {
   padding: 20px 0px;

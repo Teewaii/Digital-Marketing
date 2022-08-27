@@ -23,8 +23,11 @@ h1 {
         .head {
             font-size: clamp(1.4rem, 2.5vw, 8rem);
             font-weight: 600;
-            max-width: 450px;
+            // max-width: 450px;
             margin-bottom: 50px;
+            text-align: left;
+            padding: 0;
+            margin-left: -10px;
         }
 
         .values {
@@ -32,8 +35,10 @@ h1 {
             flex-direction: column;
             justify-content: center;
 
+
             .card {
                 margin-bottom: 30px;
+                text-align: left;
 
                 .caption,
                 img {
@@ -42,14 +47,17 @@ h1 {
 
                 .caption {
                     font-size: 1rem;
+                    width: 100%;
                 }
 
                 .body {
                     font-weight: medium;
+                    min-width: 300px;
+                    font-size: 1.2rem;
                 }
             }
 
-            @media screen and (min-width:650px) {
+            @media screen and (min-width:650px) and (max-width:850px) {
 
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -66,19 +74,21 @@ h1 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        // text-align: center;
 
         .leftSide {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            text-align: center;
+            text-align: left;
             margin-bottom: 20px;
 
-            .btn {
-                margin-inline: auto;
-            }
+
+            // .btn {
+            //     // margin-inline: auto;
+            //     margin-left: 0;
+            // }
 
             .desc {
                 display: flex;
@@ -109,8 +119,6 @@ h1 {
         }
     }
 
-
-
     @media screen and (min-width:920px) {
 
         .top-container {
@@ -133,11 +141,20 @@ h1 {
                 flex-direction: row;
                 justify-content: center;
                 align-items: flex-start;
+                width: 100%;
                 text-align: left;
+                border: 1px solid red;
+                gap: 1px;
 
                 .card {
+                    display: flex;
+                    flex-direction: column;
+                    width: 250px;
                     margin-bottom: 30px;
                     padding: 0 20px;
+                    border: 1px solid blue;
+                    transform: scale(.9);
+                    margin-right: -20px;
 
                     &:first-child {
                         padding-left: 0;
@@ -146,14 +163,17 @@ h1 {
                     .caption,
                     img {
                         margin-bottom: 10px;
+                        width: 40px;
                     }
 
                     .caption {
                         font-size: 1rem;
+                        width: 100%;
                     }
 
                     .body {
                         font-weight: medium;
+                        font-size: 1rem;
                     }
                 }
             }

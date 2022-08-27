@@ -16,8 +16,10 @@ h1 {
 .value .top-container .head {
   font-size: clamp(1.4rem, 2.5vw, 8rem);
   font-weight: 600;
-  max-width: 450px;
   margin-bottom: 50px;
+  text-align: left;
+  padding: 0;
+  margin-left: -10px;
 }
 .value .top-container .values {
   display: flex;
@@ -26,6 +28,7 @@ h1 {
 }
 .value .top-container .values .card {
   margin-bottom: 30px;
+  text-align: left;
 }
 .value .top-container .values .card .caption,
 .value .top-container .values .card img {
@@ -33,11 +36,14 @@ h1 {
 }
 .value .top-container .values .card .caption {
   font-size: 1rem;
+  width: 100%;
 }
 .value .top-container .values .card .body {
   font-weight: medium;
+  min-width: 300px;
+  font-size: 1.2rem;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 650px) and (max-width: 850px) {
   .value .top-container .values {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -51,18 +57,14 @@ h1 {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 .value .bottom-container .leftSide {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
-}
-.value .bottom-container .leftSide .btn {
-  margin-inline: auto;
 }
 .value .bottom-container .leftSide .desc {
   display: flex;
@@ -105,11 +107,20 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
     text-align: left;
+    border: 1px solid red;
+    gap: 1px;
   }
   .value .top-container .values .card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     margin-bottom: 30px;
     padding: 0 20px;
+    border: 1px solid blue;
+    transform: scale(0.9);
+    margin-right: -20px;
   }
   .value .top-container .values .card:first-child {
     padding-left: 0;
@@ -117,12 +128,15 @@ h1 {
   .value .top-container .values .card .caption,
 .value .top-container .values .card img {
     margin-bottom: 10px;
+    width: 40px;
   }
   .value .top-container .values .card .caption {
     font-size: 1rem;
+    width: 100%;
   }
   .value .top-container .values .card .body {
     font-weight: medium;
+    font-size: 1rem;
   }
   .value .bottom-container {
     display: flex;
