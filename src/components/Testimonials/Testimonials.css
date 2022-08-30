@@ -26,16 +26,33 @@ h1 {
     margin-bottom: 50px;
   }
 }
+.testimonial .name {
+  font-size: 0.8rem;
+  color: rgb(102, 102, 109);
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 50px;
+}
 .testimonial .body {
   font-size: 1.1rem;
   color: rgb(102, 102, 109);
   line-height: 1.8rem;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.testimonial .email {
+  font-size: 0.75rem;
+}
+.testimonial .reviewsContainer {
+  padding: 0 20px;
 }
 .testimonial .reviewsContainer .reviewCard {
   background-color: white;
   border: 1px solid rgba(185, 184, 184, 0.3);
   border-radius: 5px;
-  max-width: 350px;
+  max-width: 300px;
+  max-height: 260px;
   padding: 20px;
   margin: auto;
   text-align: left;
@@ -44,24 +61,45 @@ h1 {
   -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
   position: relative;
+  transform: scale(0.7);
+  position: relative;
+}
+@media screen and (min-width: 920px) {
+  .testimonial .reviewsContainer .reviewCard {
+    transform: scale(0.9);
+  }
+}
+.testimonial .reviewsContainer .reviewCard::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(185, 184, 184, 0.3);
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+.testimonial .reviewsContainer .reviewCard .star {
+  margin-top: 20px;
 }
 .testimonial .reviewsContainer .reviewCard .quote {
   background-color: rgb(55, 52, 169);
-  font-size: 1rem;
+  font-size: 2.5rem;
   color: white;
-  padding: 14px;
+  padding: 12px;
   border-radius: 50%;
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: 30px;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 920px) {
   .testimonial .reviewsContainer .reviewCard .quote {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 920px) {
+  .testimonial {
+    padding: 0 70px;
+  }
   .testimonial .testimonial .head {
     margin-bottom: 0px;
   }
@@ -69,7 +107,18 @@ h1 {
 .testimonial .slick-slide > div {
   margin: 0 10px;
   padding-top: 20px;
+  max-width: 300px;
 }
 .testimonial .slick-list {
-  margin: 0 -10px;
+  margin: 0 60px;
+}
+@media screen and (max-width: 920px) {
+  .testimonial .slick-list {
+    margin: 0 20px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(55, 52, 169) !important;
 }/*# sourceMappingURL=Testimonials.css.map */

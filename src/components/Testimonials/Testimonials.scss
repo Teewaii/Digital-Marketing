@@ -35,22 +35,36 @@ h1 {
         }
 
     }
-
+.name{
+    font-size: .8rem;
+    color: $DarkGrey;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 50px;
+}
     .body {
         font-size: 1.1rem;
         color: $DarkGrey;
         line-height: 1.8rem;
-        // max-width: 850px;
+        height: 80px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        
+    }
+    .email{
+        font-size: .75rem;
     }
 
     .reviewsContainer {
-
+        padding: 0 20px;
+       
 
         .reviewCard {
             background-color: white;
             border: 1px solid $lightkGrey;
             border-radius: 5px;
-            max-width: 350px;
+            max-width: 300px;
+            max-height: 260px;
             padding: 20px;
             margin: auto;
             text-align: left;
@@ -59,24 +73,39 @@ h1 {
             -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
             -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
             position: relative;
+            transform: scale(.7);
 
-            // @media screen and (min-width:920px) {
-            //     width: 900px;
-            // }
+            @media screen and (min-width:920px) {
+                
+                transform: scale(.9);
+            }
+            position: relative;
+        &::after{
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: $lightkGrey;
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+        }
+        .star{
+            margin-top: 20px;
+        }
 
             .quote {
                 background-color: $Blue;
-                font-size: 1rem;
+                font-size: 2.5rem;
                 color: white;
-                padding: 14px;
+                padding: 12px;
                 border-radius: 50%;
                 position: absolute;
-                top: -20px;
+                top: -15px;
                 left: 30px;
-                margin-bottom: 20px;
+                
 
                 @media screen and (min-width:920px) {
-                    font-size: 2.6rem;
+                    font-size: 3rem;
                 }
             }
         }
@@ -84,7 +113,7 @@ h1 {
     }
 
     @media screen and (min-width:920px) {
-
+        padding: 0 70px;
         .testimonial {
             .head {
                 margin-bottom: 0px;
@@ -102,10 +131,22 @@ h1 {
     .slick-slide>div {
         margin: 0 10px;
         padding-top: 20px;
-
+        max-width: 300px;
+   
     }
 
     .slick-list {
-        margin: 0 -10px;
+        margin: 0 60px;
+        @media screen and (max-width:920px) {
+            margin: 0 20px;
+        }
     }
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+
+    
+    color: $Blue!important;
 }
