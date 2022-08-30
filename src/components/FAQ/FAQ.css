@@ -1,3 +1,88 @@
 h1 {
   color: 0;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: flex-start;
+  min-height: 70vh;
+  border: 1px solid green;
+  padding: 40px 0;
+}
+@media screen and (min-width: 920px) {
+  .faq {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.faq .leftSide {
+  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.faq .leftSide .head {
+  font-size: clamp(1.6rem, 3.1vw, 8rem);
+  margin-bottom: 60px;
+  max-width: 400px;
+}
+@media screen and (min-width: 920px) {
+  .faq .leftSide .head {
+    margin-bottom: 30px;
+  }
+}
+.faq .leftSide .body {
+  font-size: 1.1rem;
+  color: rgb(102, 102, 109);
+  line-height: 1.8rem;
+  min-width: 300px;
+}
+@media screen and (min-width: 920px) {
+  .faq .leftSide .body {
+    max-width: 560px;
+    padding-right: 100px;
+  }
+}
+.faq .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+.faq .rightSide .head {
+  line-height: 3.2rem;
+  width: 100%;
+}
+.faq .rightSide .body {
+  line-height: 2rem;
+  padding-right: 40px;
+}
+.faq .rightSide .accord {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid red;
+}
+.faq .rightSide .accord .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+.faq .rightSide .accord .head span {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.faq .rightSide .show {
+  background-color: grey;
+  height: 0px;
+  overflow: hidden;
 }/*# sourceMappingURL=FAQ.css.map */

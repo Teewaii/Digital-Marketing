@@ -3,12 +3,14 @@ import stars from '../../images/Stars.png'
 import './Testimonials.css'
 import { FaQuoteLeft } from 'react-icons/fa'
 import Users from '../Users/Users'
+import TestimonialData from '../../Data';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
- import axios from 'axios';
+import axios from 'axios';
 
 export default function Testimonials() {
+  const star = Array(4).fill(0);
   const url = 'https://jsonplaceholder.typicode.com/comments';
   const [testimony, setTestimony] = useState();
 
@@ -47,10 +49,12 @@ export default function Testimonials() {
     ]
   };
   useEffect(() => {
-    axios.get(url,{ params: {
-      _limit: 10
-     }})
-      
+    axios.get(url, {
+      params: {
+        _limit: 10
+      }
+    })
+
       .then((res) => {
         setTestimony(res.data);
       })
@@ -58,30 +62,38 @@ export default function Testimonials() {
   }, [url])
   return (
     <section className="testimonial">
-      <h1 className="title">Testimonial</h1>
-      <h1 className="head">What Our Happy User Says</h1>
-      {testimony?
-      <div className="reviewsContainer ">
-        <Slider {...settings} className='sliderContainer'>
-
-          {testimony.map((testimony) => (
-            <div className="reviewCard" key={testimony.id}>
-              <img className='star' src={stars} alt="" />
-              <p className="body msg">{testimony.body}</p>
-              <FaQuoteLeft className='quote' />
-              <div className="user">
-                < p className="name" > {testimony.name}</p>
-                {/* <img src="https://unsplash.com/Ft4p5E9HjTQ" alt="" className="headShot" /> */}
-
-                <span className="email">{testimony.email}</span>
-              </div>
-
-            </div>
-          ))}
-         
-        </Slider>
+      <div className="headContainer">
+        <h3 className="title">Testimonial</h3>
+        <h1 className="head">What Our Happy User Says</h1>
       </div>
- :null}
+      {testimony ?
+        <div className="reviewsContainer ">
+
+          <Slider {...settings} className='sliderContainer'>
+
+            {testimony.map((testimony) => (
+              <div className="reviewCard" key={testimony.id}>
+                <div className="starCon">
+                  {star.map((_, i) => (
+                    <img className='star' src={stars} alt="" key={i} />
+                  ))}
+                </div>
+                <p className="body msg">{testimony.body}</p>
+
+                <FaQuoteLeft className='quote' />
+                <div className="user">
+                  < p className="name" > {testimony.name}</p>
+                  {/* <img src="https://unsplash.com/Ft4p5E9HjTQ" alt="" className="headShot" /> */}
+
+                  <span className="email">{testimony.email}</span>
+                </div>
+
+              </div>
+            ))}
+
+          </Slider>
+        </div>
+        : null}
     </section >
   )
 }
