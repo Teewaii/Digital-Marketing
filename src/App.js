@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Clients from './components/Clients/Clients';
+import FAQ from './components/FAQ/FAQ';
 import Header from './components/Header/Header';
 import Testimonials from './components/Testimonials/Testimonials';
 import TopNav from './components/TopNav/TopNav';
@@ -12,7 +13,6 @@ function App() {
     <>
 
       <TopNav />
-
       <Routes>
         <Route index element={<Header />} />
         <Route path="/clients" element={<Clients />} />
@@ -22,6 +22,7 @@ function App() {
       <Value />
       <Users />
       <Testimonials />
+      <FAQ />
 
     </>
   );

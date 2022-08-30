@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import stars from '../../images/Stars.png'
 import './Testimonials.css'
-  // import TestimonialData from '../../Data'
 import { FaQuoteLeft } from 'react-icons/fa'
 import Users from '../Users/Users'
 import Slider from 'react-slick';
