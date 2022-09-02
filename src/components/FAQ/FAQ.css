@@ -9,17 +9,17 @@ h1 {
   justify-content: center;
   text-align: flex-start;
   min-height: 70vh;
-  border: 1px solid green;
   padding: 40px 0;
 }
 @media screen and (min-width: 920px) {
   .faq {
     flex-direction: row;
     align-items: flex-start;
+    min-height: 50vh;
+    padding: 60px 0;
   }
 }
 .faq .leftSide {
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,9 +29,9 @@ h1 {
   margin-bottom: 20px;
 }
 .faq .leftSide .head {
-  font-size: clamp(1.6rem, 3.1vw, 8rem);
-  margin-bottom: 60px;
-  max-width: 400px;
+  font-size: clamp(1.6rem, 3.1vw, 4rem);
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 @media screen and (min-width: 920px) {
   .faq .leftSide .head {
@@ -42,13 +42,23 @@ h1 {
   font-size: 1.1rem;
   color: rgb(102, 102, 109);
   line-height: 1.8rem;
-  min-width: 300px;
+  min-width: 250px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 920px) {
   .faq .leftSide .body {
     max-width: 560px;
     padding-right: 100px;
   }
+}
+.faq .leftSide .morefaq {
+  display: flex;
+  align-items: center;
+}
+.faq .leftSide .morefaq span {
+  color: rgb(55, 52, 169);
+  font-weight: bold;
+  margin-right: 5px;
 }
 .faq .rightSide {
   display: flex;
@@ -60,29 +70,48 @@ h1 {
   line-height: 3.2rem;
   width: 100%;
 }
-.faq .rightSide .body {
-  line-height: 2rem;
-  padding-right: 40px;
-}
 .faq .rightSide .accord {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border: 1px solid red;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  position: relative;
 }
-.faq .rightSide .accord .head {
+.faq .rightSide .accord::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(185, 184, 184, 0.3);
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.faq .rightSide .accord .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
   width: 100%;
+  font-size: 0.9rem;
 }
-.faq .rightSide .accord .head span {
-  font-size: 3rem;
-  cursor: pointer;
-}
-.faq .rightSide .show {
-  background-color: grey;
-  height: 0px;
+.faq .rightSide .accord .desc .body {
+  line-height: 2rem;
+  padding-right: 40px;
+  max-height: 0;
+  margin-top: 10px;
   overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.faq .rightSide .accord .desc .body.open {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+.faq .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(55, 52, 169);
 }/*# sourceMappingURL=FAQ.css.map */

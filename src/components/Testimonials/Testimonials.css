@@ -33,9 +33,9 @@ h1 {
   color: rgb(79, 70, 186);
 }
 .testimonial .headContainer .head {
-  font-size: clamp(1.6rem, 3.1vw, 8rem);
+  font-size: clamp(1.6rem, 3.1vw, 4rem);
   margin-bottom: 60px;
-  max-width: 400px;
+  max-width: 550px;
 }
 @media screen and (min-width: 920px) {
   .testimonial .headContainer .head {
@@ -128,7 +128,7 @@ h1 {
 }
 @media screen and (max-width: 920px) {
   .testimonial .slick-slide > div {
-    margin: 0 10px -50px 10px;
+    margin: 0 10px -40px 10px;
   }
 }
 .testimonial .slick-list {
@@ -136,7 +136,7 @@ h1 {
 }
 @media screen and (max-width: 920px) {
   .testimonial .slick-list {
-    margin: 0 20px;
+    margin: 0 40px;
   }
 }
 

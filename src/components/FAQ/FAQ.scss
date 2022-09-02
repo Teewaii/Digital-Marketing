@@ -16,22 +16,23 @@ h1 {
     justify-content: center;
     text-align: flex-start;
     min-height: 70vh;
-    border: 1px solid green;
     padding: 40px 0;
+    // border: 1px solid red;
 
     @media screen and (min-width:920px) {
         flex-direction: row;
         align-items: flex-start;
+        min-height: 50vh;
+        padding: 60px 0;
     }
 
     .leftSide {
-        border: 1px solid blue;
         width: 100%;
 
         .head {
-            font-size: clamp(1.6rem, 3.1vw, 8rem);
-            margin-bottom: 60px;
-            max-width: 400px;
+            font-size: clamp(1.6rem, 3.1vw, 4rem);
+            margin-bottom: 40px;
+            max-width: 500px;
 
             @media screen and (min-width:920px) {
                 margin-bottom: 30px;
@@ -42,12 +43,24 @@ h1 {
             font-size: 1.1rem;
             color: rgb(102, 102, 109);
             line-height: 1.8rem;
-            min-width: 300px;
+            min-width: 250px;
+            margin-bottom: 30px;
 
             @media screen and (min-width:920px) {
                 max-width: 560px;
                 padding-right: 100px;
+            }
 
+        }
+
+        .morefaq {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: $Blue;
+                font-weight: bold;
+                margin-right: 5px;
             }
         }
 
@@ -64,43 +77,62 @@ h1 {
         flex-direction: column;
         justify-content: flex-end;
         width: 100%;
-        // margin: 20px;
 
         .head {
             line-height: 3.2rem;
             width: 100%;
         }
 
-        .body {
-            line-height: 2rem;
-            // max-width: 300px;
-            padding-right: 40px;
-        }
-
-
         .accord {
             height: fit-content;
-            border: 1px solid red;
+            padding: 15px;
+            cursor: pointer;
+            // background-color: $lightkGrey;
+            margin-bottom: 5px;
+            position: relative;
 
-            .head {
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: $lightkGrey;
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+            }
+
+            .question {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 font-weight: bold;
                 width: 100%;
-
-                span {
-                    font-size: 3rem;
-                    cursor: pointer;
-                }
+                font-size: .9rem;
             }
 
+            .desc {
+                .body {
+                    line-height: 2rem;
+                    padding-right: 40px;
+                    max-height: 0;
+                    margin-top: 10px;
+                    overflow: hidden;
+                    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+
+                    &.open {
+                        max-height: fit-content;
+                        transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+                    }
+                }
+            }
         }
 
-        .show {
-            background-color: grey;
-            height: 0px;
-            overflow: hidden;
-        }
+
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $Blue;
     }
 }

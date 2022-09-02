@@ -6,6 +6,10 @@ h1 {
   position: relative;
   text-align: center;
 }
+.value .bkg {
+  background-color: rgba(185, 184, 184, 0.2);
+  display: flex;
+}
 .value .top-container {
   display: flex;
   flex-direction: column;

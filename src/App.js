@@ -4,6 +4,7 @@ import './App.css';
 import Clients from './components/Clients/Clients';
 import FAQ from './components/FAQ/FAQ';
 import Header from './components/Header/Header';
+import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
 import TopNav from './components/TopNav/TopNav';
 import Users from './components/Users/Users';
@@ -24,7 +25,8 @@ function App() {
       <Users />
       <Testimonials />
       <FAQ />
-
+      <Subscribe />
+      <FAQ />
     </>
   );
 }
