@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 5px;
   margin: 25px 0 75px 0;
   cursor: pointer;
@@ -49,4 +49,12 @@
   display: flex;
   font-size: 1.5rem;
   align-items: center;
+}
+
+
+
+.waitlist {
+  background-color: #f9896b;
+  padding: 10px;
+  color: black;
 }

@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Clients from './components/Clients/Clients';
 import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
@@ -27,6 +28,7 @@ function App() {
       <FAQ />
       <Subscribe />
       <FAQ />
+      <Footer />
     </>
   );
 }
