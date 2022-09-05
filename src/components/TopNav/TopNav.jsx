@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { Link } from 'react-scroll';
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import React from 'react';
@@ -24,44 +23,44 @@ export default function TopNav() {
 
         <nav className={shadow ? 'navBar Navshadow' : 'navBar'}>
             <div className="logo">
-                <NavLink to='/' className='logoLink' spy={true} smooth={true} offset={50} duration={500} >
+                <Link to='/' className='logoLink' >
                     <h1 className="logo ">Tee<span className='redArea'>wai</span></h1>
-                </NavLink>
+                </Link>
             </div>
             <div className={menu ? " container_nav hideOnMobile" : "container_nav"}>
 
                 <div className="mainNav">
                     <ul className="Navlinks">
-                        <li>
+                        <li className='parentList'>
                             <NavLink to='#'>
                                 About
                             </NavLink>
-                            <ul className='secAbout '>
+                            <ul className='secAbout'>
 
                                 <li>
-                                    <NavLink to='Values' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                                    <NavLink to='Values'>
                                         Values
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='Clients' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                                    <NavLink to='Clients'>
                                         Client
                                     </NavLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <NavLink to='Users' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                            <NavLink to='Users'>
                                 Users
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='Testimonials' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                            <NavLink to='Testimonials'>
                                 Testimonials
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='FAQ' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                            <NavLink to='FAQ'>
                                 FAQ
                             </NavLink>
                         </li>
@@ -70,22 +69,22 @@ export default function TopNav() {
                 <div className="newUser">
                     <ul className="Seclinks">
                         <li>
-                            <NavLink to='#Sign In' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
+                            <NavLink to='#'>
                                 Sign In
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#Start Free' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
-                                Start Free
+                            <NavLink to='#'>
+                                Start For Free
                             </NavLink>
                         </li>
                     </ul>
                 </div>
             </div >
             <div className="toggleBtn">
-                {menu ? < AiOutlineClose className='toggle show' onClick={menuToggle} /> : < BiMenuAltRight className='toggle show' onClick={menuToggle} />}
+                {menu ? < AiOutlineClose className='toggle show' id='close' onClick={menuToggle} /> : < BiMenuAltRight className='toggle show' onClick={menuToggle} />}
             </div>
-            {menu ? <div className="overlay anim"></div> : null}
+            {/* {menu ? <div className="overlay anim"></div> : null} */}
         </nav >
 
 

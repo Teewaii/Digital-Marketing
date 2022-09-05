@@ -22,16 +22,17 @@ $Blue: rgba(55, 52, 169, 1);
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
-    width: 85%;
+    // width: 85%;
     margin-inline: auto;
     background-color: white;
     // padding: 10px 140px 25px 140px;
-    padding: 10px 30px 25px 30px;
+    padding: 10px 140px 25px 140px;
     z-index: 30;
 
 
     @media screen and (max-width:1000px) {
-        width: 100%;
+        width: 90%;
+        padding: 10px 30px 25px 30px;
     }
 
     .Navlinks,
@@ -79,7 +80,7 @@ $Blue: rgba(55, 52, 169, 1);
 
         @media screen and (max-width:920px) {
             flex-direction: column;
-            width: 70%;
+            width: 100%;
             margin-left: -800px;
             position: absolute;
             top: 0px;
@@ -134,6 +135,10 @@ $Blue: rgba(55, 52, 169, 1);
                             color: white;
                         }
                     }
+
+                    &:hover>.Seclinks {
+                        background-color: red;
+                    }
                 }
 
                 @media screen and (max-width:920px) {
@@ -173,24 +178,29 @@ $Blue: rgba(55, 52, 169, 1);
         display: none;
         font-size: 2rem;
         cursor: pointer;
+        z-index: 400;
 
         @media screen and (max-width:920px) {
             display: block;
         }
     }
 
-    .overlay {
-        position: absolute;
-        background-color: black;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 100vh;
-        opacity: .4;
-        z-index: -1;
-
+    #close {
+        color: white;
     }
+
+    // .overlay {
+    //     position: absolute;
+    //     background-color: black;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     height: 100vh;
+    //     opacity: .4;
+    //     z-index: -1;
+
+    // }
 
     .secAbout {
         display: none;
@@ -198,11 +208,27 @@ $Blue: rgba(55, 52, 169, 1);
         position: absolute;
         left: 0;
         padding: 5px 0;
-        margin-top: 10px;
+        width: 120px;
+        margin-top: 18px;
+        transition: all 0.5s ease-in;
+        text-align: center;
+
+        &::after {
+            content: "";
+            background-color: $Blue;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            transform: rotate(45deg);
+            left: 35%;
+            top: 0;
+            z-index: -1;
+        }
 
         li {
             &:first-child {
                 border-bottom: 1px solid $primary;
+                width: 100%;
                 border-radius: 0;
                 margin-bottom: 5px;
             }
@@ -211,9 +237,13 @@ $Blue: rgba(55, 52, 169, 1);
                 color: white;
             }
         }
+    }
 
-        &:hover {
-            display: flex;
+    .parentList {
+        &:hover>.secAbout {
+            display: block;
+            margin-top: 15px;
+            transition: all 0.5s ease-in;
         }
     }
 }

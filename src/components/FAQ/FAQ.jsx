@@ -32,12 +32,12 @@ export default function FAQ() {
       <div className="rightSide">
         {quest.map((item, index) => {
           return (
-            <div className="accord" onClick={() => toggle(index)}>
-              <div className="question" key={index}>
+            <div className="accord" onClick={() => toggle(index)} key={index}>
+              <div className="question" >
                 <h1>{item.Question}</h1>
                 {accord === index ? <AiFillMinusCircle className='icon' /> : <AiFillPlusCircle className='icon' />}
               </div>
-              <div className="desc">
+              <div className="desc" >
                 <p className={accord === index ? "body open" : "body"}>{item.Ans}</p>
               </div>
 

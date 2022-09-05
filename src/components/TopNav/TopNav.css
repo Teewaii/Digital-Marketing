@@ -13,15 +13,15 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 1.5rem;
-  width: 85%;
   margin-inline: auto;
   background-color: white;
-  padding: 10px 30px 25px 30px;
+  padding: 10px 140px 25px 140px;
   z-index: 30;
 }
 @media screen and (max-width: 1000px) {
   .navBar {
-    width: 100%;
+    width: 90%;
+    padding: 10px 30px 25px 30px;
   }
 }
 .navBar .Navlinks,
@@ -63,7 +63,7 @@
 @media screen and (max-width: 920px) {
   .navBar .container_nav {
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin-left: -800px;
     position: absolute;
     top: 0px;
@@ -108,6 +108,9 @@
 .navBar .container_nav .newUser .Seclinks li:nth-child(2) a {
   color: white;
 }
+.navBar .container_nav .newUser .Seclinks li:hover > .Seclinks {
+  background-color: red;
+}
 @media screen and (max-width: 920px) {
   .navBar .container_nav .newUser .Seclinks {
     flex-direction: row;
@@ -137,22 +140,15 @@
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  z-index: 400;
 }
 @media screen and (max-width: 920px) {
   .navBar .toggleBtn {
     display: block;
   }
 }
-.navBar .overlay {
-  position: absolute;
-  background-color: black;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  opacity: 0.4;
-  z-index: -1;
+.navBar #close {
+  color: white;
 }
 .navBar .secAbout {
   display: none;
@@ -160,16 +156,33 @@
   position: absolute;
   left: 0;
   padding: 5px 0;
-  margin-top: 10px;
+  width: 120px;
+  margin-top: 18px;
+  transition: all 0.5s ease-in;
+  text-align: center;
+}
+.navBar .secAbout::after {
+  content: "";
+  background-color: rgb(55, 52, 169);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 35%;
+  top: 0;
+  z-index: -1;
 }
 .navBar .secAbout li:first-child {
   border-bottom: 1px solid rgb(79, 70, 186);
+  width: 100%;
   border-radius: 0;
   margin-bottom: 5px;
 }
 .navBar .secAbout li a {
   color: white;
 }
-.navBar .secAbout:hover {
-  display: flex;
+.navBar .parentList:hover > .secAbout {
+  display: block;
+  margin-top: 15px;
+  transition: all 0.5s ease-in;
 }/*# sourceMappingURL=TopNav.css.map */
