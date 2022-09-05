@@ -55,14 +55,16 @@
 }
 .navBar .container_nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 5rem;
+  position: relative;
 }
 @media screen and (max-width: 920px) {
   .navBar .container_nav {
     flex-direction: column;
     width: 70%;
+    margin-left: -800px;
     position: absolute;
     top: 0px;
     left: -2px;
@@ -71,7 +73,8 @@
     text-align: left;
     background-color: rgb(55, 52, 169);
     padding: 70px 0 40px 0;
-    height: 50vh;
+    height: 100vh;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .navBar .container_nav .Navlinks,
 .navBar .container_nav .newUser {
@@ -89,7 +92,7 @@
     color: rgb(55, 52, 169);
   }
   .navBar .container_nav li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: white;
   }
@@ -107,7 +110,7 @@
 }
 @media screen and (max-width: 920px) {
   .navBar .container_nav .newUser .Seclinks {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
@@ -122,11 +125,12 @@
   display: none;
 }
 .navBar .hideOnMobile {
-  display: none;
+  margin-left: 0;
 }
 @media screen and (min-width: 920px) {
   .navBar .hideOnMobile {
     display: flex;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
   }
 }
 .navBar .toggleBtn {
@@ -138,4 +142,34 @@
   .navBar .toggleBtn {
     display: block;
   }
+}
+.navBar .overlay {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  opacity: 0.4;
+  z-index: -1;
+}
+.navBar .secAbout {
+  display: none;
+  background-color: rgb(55, 52, 169);
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+.navBar .secAbout li:first-child {
+  border-bottom: 1px solid rgb(79, 70, 186);
+  border-radius: 0;
+  margin-bottom: 5px;
+}
+.navBar .secAbout li a {
+  color: white;
+}
+.navBar .secAbout:hover {
+  display: flex;
 }/*# sourceMappingURL=TopNav.css.map */

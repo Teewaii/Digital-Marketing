@@ -11,21 +11,85 @@ h1 {
     color: red($color: #000000);
 }
 
-a {
-    text-decoration: none;
-    color: $whiteGrey;
-}
 
 .footer-wrapper {
     text-align: left;
     background-color: $Footer;
     color: white;
-    padding: 30px 0;
+    padding: 40px 0;
 
-    .top-section {}
+    .top-section {
+        @media screen and (min-width:920px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .head {
+                font-size: 2.5rem;
+                font-weight: normal;
+                max-width: 600px;
+                text-align: center;
+            }
+        }
+    }
 
     .middle-section {
-        .leftSide {}
+        align-items: center;
+        position: relative;
+        overflow: visible;
+        margin-top: 70px;
+
+        &:after,
+        &::before {
+            content: "";
+            background-color: $DarkGrey;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            opacity: .3;
+
+        }
+
+        &::before {
+            top: -20px;
+        }
+
+        &::after {
+
+            display: none;
+
+
+            @media screen and (min-width:920px) {
+                display: block;
+                bottom: -35px;
+            }
+        }
+
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 80px;
+        }
+
+        .leftSide {
+            line-height: 1.7rem;
+
+            .body {
+                color: $DarkGrey;
+                margin-top: 20px;
+            }
+
+            @media screen and (min-width:920px) {
+                .body {
+                    max-width: 500px;
+                    color: $DarkGrey;
+                }
+            }
+        }
 
         .rightSide {
             display: flex;
@@ -33,15 +97,30 @@ a {
             margin: 30px 0;
 
             .title {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                font-weight: normal;
             }
 
             li {
                 margin-bottom: 10px;
                 font-size: .8rem;
+            }
 
+
+            @media screen and (min-width:920px) {
+                gap: 5rem;
+
+                li {
+                    font-size: 1rem;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $whiteGrey;
             }
         }
+
 
     }
 
@@ -55,6 +134,12 @@ a {
         .art {
             font-size: .7rem;
             opacity: .6;
+        }
+
+        @media screen and (min-width:750px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

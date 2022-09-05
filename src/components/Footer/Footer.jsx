@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="footer container">
                 <div className="top-section">
                     <h1 className="head">Join millions of
-                        creative people with Shakir</h1>
+                        creative people with Teewai</h1>
                     <button className='btn waitlist'>Join the waitlist<span><HiArrowSmRight /></span></button>
                 </div>
                 <div className="middle-section">
@@ -38,10 +38,10 @@ export default function Footer() {
                             <li><a href='#'>How to increase activity</a></li>
                         </ul>
                     </div>
-                    <div className="bottom-section">
-                        <p className="body">Developed by <a href='https://github.com/Teewaii'>Teewai</a></p>
-                        <p className="body art">Designed by ARShakir, Inc. All rights reserved.</p>
-                    </div>
+                </div>
+                <div className="bottom-section">
+                    <p className="body">Developed by <a href='https://github.com/Teewaii'>Teewai</a></p>
+                    <p className="body art">Designed by ARShakir, Inc. All rights reserved.</p>
                 </div>
             </div>
         </section>

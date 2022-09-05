@@ -5,7 +5,6 @@ import cookies from '../../images/Cookies.png'
 import login from '../../images/Login_NotRequired.png'
 import MoneyBack from '../../images/Money_Back.png'
 import hero from '../../images/HR_current_Line.png'
-import vid from '../../images/SocialMediaIconsAnimation.mp4'
 export default function Value() {
     return (
         <section className=" value">

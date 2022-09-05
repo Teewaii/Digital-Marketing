@@ -10,6 +10,11 @@ h1 {
   background-color: rgba(185, 184, 184, 0.2);
   display: flex;
 }
+@media screen and (max-width: 920px) {
+  .value .bkg {
+    padding-top: 50px;
+  }
+}
 .value .top-container {
   display: flex;
   flex-direction: column;

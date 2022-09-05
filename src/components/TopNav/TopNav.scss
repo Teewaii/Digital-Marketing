@@ -7,11 +7,11 @@ $Blue: rgba(55, 52, 169, 1);
 //     position: relative;
 // }
 
-.Navshadow{
-background-color: blue;
-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
--webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
+.Navshadow {
+    background-color: blue;
+    box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -29,7 +29,6 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
     padding: 10px 30px 25px 30px;
     z-index: 30;
 
-   
 
     @media screen and (max-width:1000px) {
         width: 100%;
@@ -43,6 +42,7 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
     li {
         padding: 8px 18px;
         border-radius: 20px;
+
     }
 
     a {
@@ -72,13 +72,15 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
 
     .container_nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 5rem;
+        position: relative;
 
         @media screen and (max-width:920px) {
             flex-direction: column;
             width: 70%;
+            margin-left: -800px;
             position: absolute;
             top: 0px;
             left: -2px;
@@ -87,7 +89,8 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
             text-align: left;
             background-color: $Blue;
             padding: 70px 0 40px 0;
-            height: 50vh;
+            height: 100vh;
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
             .Navlinks,
             .newUser {
@@ -108,9 +111,10 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
                 }
 
                 a {
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     font-weight: 500;
                     color: white;
+
                 }
             }
 
@@ -133,7 +137,7 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
                 }
 
                 @media screen and (max-width:920px) {
-                    flex-direction: column;
+                    flex-direction: row;
                     justify-content: center;
                     gap: 1rem;
 
@@ -156,14 +160,14 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
     }
 
     .hideOnMobile {
-        display: none;
+        // display: none;
+        margin-left: 0;
 
         @media screen and (min-width:920px) {
             display: flex;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
         }
     }
-
-
 
     .toggleBtn {
         display: none;
@@ -172,6 +176,44 @@ box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
 
         @media screen and (max-width:920px) {
             display: block;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        opacity: .4;
+        z-index: -1;
+
+    }
+
+    .secAbout {
+        display: none;
+        background-color: $Blue;
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        margin-top: 10px;
+
+        li {
+            &:first-child {
+                border-bottom: 1px solid $primary;
+                border-radius: 0;
+                margin-bottom: 5px;
+            }
+
+            a {
+                color: white;
+            }
+        }
+
+        &:hover {
+            display: flex;
         }
     }
 }

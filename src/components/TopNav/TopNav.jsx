@@ -1,29 +1,34 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import { BiMenuAltRight } from 'react-icons/bi'
+import { AiOutlineClose } from 'react-icons/ai'
 import React from 'react';
 import './TopNav.css'
 
 export default function TopNav() {
-    const [shadow, setShadow] = useState(false)
-
-    function NavShadow(){
-        if (window.scrollY>=90){
+    const [shadow, setShadow] = useState(false);
+    const [menu, setMenu] = useState(false);
+    function menuToggle() {
+        setMenu(prev => !prev)
+    }
+    function NavShadow() {
+        if (window.scrollY >= 90) {
             setShadow(true)
-        }else{
+        } else {
             setShadow(false)
         }
-        }
+    }
     window.addEventListener('scroll', NavShadow)
     return (
 
-        <nav className={shadow?'navBar Navshadow':'navBar'}>
+        <nav className={shadow ? 'navBar Navshadow' : 'navBar'}>
             <div className="logo">
-                <Link to='/' className='logoLink' >
+                <NavLink to='/' className='logoLink' spy={true} smooth={true} offset={50} duration={500} >
                     <h1 className="logo ">Tee<span className='redArea'>wai</span></h1>
-                </Link>
+                </NavLink>
             </div>
-            <div className=" container_nav hideOnMobile">
+            <div className={menu ? " container_nav hideOnMobile" : "container_nav"}>
 
                 <div className="mainNav">
                     <ul className="Navlinks">
@@ -31,32 +36,32 @@ export default function TopNav() {
                             <NavLink to='#'>
                                 About
                             </NavLink>
-                            <ul className='secAbout hide'>
+                            <ul className='secAbout '>
 
                                 <li>
-                                    <NavLink to='#Values'>
+                                    <NavLink to='Values' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                         Values
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='#Clients'>
+                                    <NavLink to='Clients' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                         Client
                                     </NavLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <NavLink to='#Users'>
+                            <NavLink to='Users' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                 Users
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#Testimonials'>
+                            <NavLink to='Testimonials' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                 Testimonials
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#FAQ'>
+                            <NavLink to='FAQ' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                 FAQ
                             </NavLink>
                         </li>
@@ -65,22 +70,22 @@ export default function TopNav() {
                 <div className="newUser">
                     <ul className="Seclinks">
                         <li>
-                            <NavLink to='#Sign In'>
+                            <NavLink to='#Sign In' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                 Sign In
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#Start Free'>
+                            <NavLink to='#Start Free' activeClass="active" spy={true} smooth={true} offset={50} duration={500}>
                                 Start Free
                             </NavLink>
                         </li>
                     </ul>
                 </div>
-
             </div >
             <div className="toggleBtn">
-                <BiMenuAltRight className='toggle show' />
+                {menu ? < AiOutlineClose className='toggle show' onClick={menuToggle} /> : < BiMenuAltRight className='toggle show' onClick={menuToggle} />}
             </div>
+            {menu ? <div className="overlay anim"></div> : null}
         </nav >
 
 
