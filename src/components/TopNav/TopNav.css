@@ -44,6 +44,7 @@ a {
   font-size: 2rem;
   color: rgb(79, 70, 186);
   text-transform: uppercase;
+  z-index: 80000;
 }
 @media screen and (max-width: 920px) {
   .navBar .logo {

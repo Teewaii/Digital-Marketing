@@ -1,0 +1,120 @@
+.formContainer {
+  position: relative;
+}
+.formContainer .signup {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 40px 20px;
+  position: absolute;
+  border: 1px solid rgb(238, 238, 238);
+  top: 70px;
+  left: 10%;
+  right: 10%;
+  margin: auto;
+  max-width: 380px;
+  max-height: 80vh;
+  color: rgb(55, 52, 169);
+  z-index: 400;
+  box-shadow: 13px 24px 48px 0px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 13px 24px 48px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 13px 24px 48px 0px rgba(0, 0, 0, 0.33);
+}
+@media screen and (max-width: 850px) {
+  .formContainer .signup {
+    max-height: 82vh;
+  }
+}
+.formContainer .signup h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.formContainer .signup p {
+  color: rgb(79, 70, 186);
+  margin-bottom: 35px;
+}
+.formContainer .signup p:nth-child(1) {
+  margin-bottom: 15px;
+}
+.formContainer .signup .Signupform form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer .signup .Signupform form input {
+  width: 300px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(226, 226, 226, 0.5);
+  box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  max-width: 90%;
+}
+.formContainer .signup .Signupform form input::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.formContainer .signup .Signupform form input:-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+.formContainer .signup .Signupform form input::placeholder {
+  font-size: 0.9rem;
+}
+.formContainer .signup .Signupform form input[type=button] {
+  background-color: rgb(55, 52, 169);
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 17px 22px 32px -3px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 17px 22px 32px -3px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 17px 22px 32px -3px rgba(0, 0, 0, 0.33);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.formContainer .signup .Signupform form input[type=button]:hover {
+  background-color: rgb(79, 70, 186);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.formContainer .signup .Signupform .option2 {
+  margin-top: 20px;
+}
+.formContainer .signup .Signupform .option2 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: rgb(55, 52, 169);
+}
+@media screen and (max-width: 850px) {
+  .formContainer .signup .Signupform .option2 .icons {
+    gap: 8px;
+  }
+}
+.formContainer .signup .Signupform .option2 .icons .icon {
+  padding: 10px;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.formContainer .signup .Signupform .option2 .icons .icon:hover {
+  background-color: rgba(55, 52, 169, 0.2);
+}
+.formContainer .signup .user {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.formContainer .overlay {
+  position: absolute;
+  background-color: rgb(55, 52, 169);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 40;
+}/*# sourceMappingURL=Signup.css.map */

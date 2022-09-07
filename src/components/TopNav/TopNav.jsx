@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-
 import React, { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -79,7 +78,7 @@ export default function TopNav() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='#'>
+                            <NavLink to='Signup' >
                                 Start For Free
                             </NavLink>
                         </li>

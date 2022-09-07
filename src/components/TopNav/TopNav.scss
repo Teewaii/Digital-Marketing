@@ -59,7 +59,7 @@ a {
         font-size: 2rem;
         color: $primary;
         text-transform: uppercase;
-
+        z-index: 80000;
 
         @media screen and (max-width:920px) {
             font-size: 1.6rem;

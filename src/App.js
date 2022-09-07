@@ -10,19 +10,17 @@ import Testimonials from './components/Testimonials/Testimonials';
 import TopNav from './components/TopNav/TopNav';
 import Users from './components/Users/Users';
 import Value from './components/Value/Value';
+import Signup from './components/signup/Signup';
 
 function App() {
 
-
-
   return (
     <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="signup" element={<Signup />} />
-          <Route path="login" element={<Login />} />
-        </Routes>
-      </BrowserRouter> */}
+
+      <Routes>
+        <Route path="signup" element={<Signup />} />
+        {/* <Route path="login" element={<Login />} /> */}
+      </Routes>
 
       <TopNav />
       <Header />
