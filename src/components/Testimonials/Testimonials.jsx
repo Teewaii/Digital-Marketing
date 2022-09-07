@@ -61,7 +61,7 @@ export default function Testimonials() {
 
   }, [url])
   return (
-    <section className="testimonial">
+    <section className="testimonial" id='testimonial'>
       <div className="headContainer">
         <h3 className="title">Testimonial</h3>
         <h1 className="head">What Our Happy User Says</h1>

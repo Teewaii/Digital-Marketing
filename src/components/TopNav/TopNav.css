@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 .Navshadow {
   background-color: blue;
   box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
@@ -185,4 +189,7 @@
   display: block;
   margin-top: 15px;
   transition: all 0.5s ease-in;
+}
+.navBar Link {
+  cursor: pointer;
 }/*# sourceMappingURL=TopNav.css.map */

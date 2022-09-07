@@ -13,7 +13,7 @@ export default function Value() {
                     <h1 className="head">
                         One platform to increase followers on all social media.
                     </h1>
-                    <div className="values">
+                    <div className="values" id='values'>
                         <div className="secure card">
                             <img src={secure} alt="secure icon" />
                             <h1 className='caption'>100% Secure</h1>

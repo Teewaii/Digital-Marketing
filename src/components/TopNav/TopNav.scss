@@ -7,6 +7,10 @@ $Blue: rgba(55, 52, 169, 1);
 //     position: relative;
 // }
 
+a {
+    cursor: pointer;
+}
+
 .Navshadow {
     background-color: blue;
     box-shadow: 3px 11px 8px -8px rgba(0, 0, 0, 0.1);
@@ -245,5 +249,9 @@ $Blue: rgba(55, 52, 169, 1);
             margin-top: 15px;
             transition: all 0.5s ease-in;
         }
+    }
+
+    Link {
+        cursor: pointer;
     }
 }

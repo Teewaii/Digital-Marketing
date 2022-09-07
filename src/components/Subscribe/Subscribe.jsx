@@ -4,7 +4,7 @@ import subImg from '../../images/communityimage.png';
 import './Subscribe.css'
 export default function Subscribe() {
     return (
-        <section className="subscribe">
+        <section className="subscribe" id='subscribe'>
             <div className="formContainer ">
                 <span className="title">Join our Community</span>
                 <h1 className="head">Set your social media growth on autopilot.</h1>

@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import useState from 'react';
 import './App.css';
 import Clients from './components/Clients/Clients';
@@ -17,8 +17,26 @@ function App() {
 
   return (
     <>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="signup" element={<Signup />} />
+          <Route path="login" element={<Login />} />
+        </Routes>
+      </BrowserRouter> */}
 
       <TopNav />
+      <Header />
+      <Clients />
+      <Value />
+      <Users />
+      <Testimonials />
+      <FAQ />
+      <Subscribe />
+      <FAQ />
+      <Footer />
+
+
+      {/* <TopNav />
       <Routes>
         <Route index element={<Header />} />
         <Route path="clients" element={<Clients />} />
@@ -28,17 +46,10 @@ function App() {
         <Route path="faq" element={<FAQ />} />
         <Route path="subscribe" element={<Subscribe />} />
         <Route path="footer" element={<Footer />} />
-      </Routes>
-      {/* <Clients />
-      <Value />
-      <Users />
-      <Testimonials />
-      <FAQ />
-      <Subscribe />
-      <FAQ />
-      <Footer /> */}
+      </Routes> */}
     </>
   );
 }
 
 export default App;
+

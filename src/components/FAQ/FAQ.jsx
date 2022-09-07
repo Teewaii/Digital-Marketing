@@ -18,7 +18,7 @@ export default function FAQ() {
 
   return (
 
-    < section className="container faq" >
+    < section className="container faq" id='faq' >
       <div className="leftSide">
         <h1 className='head'>Any questions?
           We got you.</h1>
