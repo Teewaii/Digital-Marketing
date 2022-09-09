@@ -7,20 +7,23 @@ import { FaTwitter } from 'react-icons/fa';
 import Header from '../Header/Header';
 import { Link } from 'react-router-dom';
 export default function Signup() {
-    const [shadow, setShadow] = useState(true);
-    const [signupForm, setSignupForm] = useState(true)
+    // const [shadow, setShadow] = useState(true);
+    // // const [signupForm, setSignupForm] = useState(true)
 
-    function closeForm() {
-        setShadow(false)
-        setSignupForm(prev => !prev)
-    }
+    // function closeForm() {
+    //     setShadow(false)
+    //     // setSignupForm(prev => !prev)
+    // }
     return (
-        <><Link to='/' >
-            <div className="formContainer">
-                {signupForm && <div className="signup" id='signup'>
+        <>
+
+            <div className="form-Container">
+                <div className="signup" id='signup'>
                     <FaUserCircle className='user' />
-                    <div className="head"><h1>Create your Account</h1>
-                        <p className="title">Sing in to your Account</p>
+                    <div className="head">
+                        <h1>Create your Account</h1>
+                        <p className="title">Already have an account?
+                            <br /><a href='#' >Sign in</a></p>
                     </div>
 
                     <div className="Signupform">
@@ -41,10 +44,10 @@ export default function Signup() {
                     </div>
 
                 </div>
-                }
-                {shadow && <div className="overlay " onClick={closeForm}></div>}
+
+                {/* <div className="overlay " ></div> */}
             </div>
-        </Link>
+
         </>
     )
 }

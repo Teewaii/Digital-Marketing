@@ -17,12 +17,7 @@ function App() {
   return (
     <>
 
-      <Routes>
-        <Route path="signup" element={<Signup />} />
-        {/* <Route path="login" element={<Login />} /> */}
-      </Routes>
-
-      <TopNav />
+      < TopNav />
       <Header />
       <Clients />
       <Value />
@@ -31,6 +26,7 @@ function App() {
       <FAQ />
       <Subscribe />
       <FAQ />
+      <Signup />
       <Footer />
 
 

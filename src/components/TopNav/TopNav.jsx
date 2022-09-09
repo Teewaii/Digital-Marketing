@@ -78,9 +78,9 @@ export default function TopNav() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='Signup' >
+                            <Link to='signup' spy={true} smooth={true} offset={-150} duration={500}>
                                 Start For Free
-                            </NavLink>
+                            </Link>
                         </li>
                     </ul>
                 </div>
