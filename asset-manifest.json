@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github.io/Digital-Marketing/static/css/main.2aea4ee5.css",
-    "main.js": "/github.io/Digital-Marketing/static/js/main.27adc278.js",
-    "static/media/HeaderImage.png": "/github.io/Digital-Marketing/static/media/HeaderImage.0c63d9dda19d5c7d8616.png",
-    "static/media/HR_current_Line.png": "/github.io/Digital-Marketing/static/media/HR_current_Line.755262f005cf4147c0fe.png",
-    "static/media/communityimage.png": "/github.io/Digital-Marketing/static/media/communityimage.887b22721b0fc5d75391.png",
-    "static/media/Followers.png": "/github.io/Digital-Marketing/static/media/Followers.2d506af39c4d108c20dc.png",
-    "static/media/testimonial_watermark.png": "/github.io/Digital-Marketing/static/media/testimonial_watermark.29dcef5a57ee832b6583.png",
-    "static/media/slick.svg": "/github.io/Digital-Marketing/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/github.io/Digital-Marketing/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/github.io/Digital-Marketing/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/github.io/Digital-Marketing/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/github.io/Digital-Marketing/index.html",
-    "main.2aea4ee5.css.map": "/github.io/Digital-Marketing/static/css/main.2aea4ee5.css.map",
-    "main.27adc278.js.map": "/github.io/Digital-Marketing/static/js/main.27adc278.js.map"
+    "main.css": "/Digital-Marketing/static/css/main.85463571.css",
+    "main.js": "/Digital-Marketing/static/js/main.98f90bc7.js",
+    "static/media/HeaderImage.png": "/Digital-Marketing/static/media/HeaderImage.0c63d9dda19d5c7d8616.png",
+    "static/media/HR_current_Line.png": "/Digital-Marketing/static/media/HR_current_Line.755262f005cf4147c0fe.png",
+    "static/media/communityimage.png": "/Digital-Marketing/static/media/communityimage.887b22721b0fc5d75391.png",
+    "static/media/Followers.png": "/Digital-Marketing/static/media/Followers.2d506af39c4d108c20dc.png",
+    "static/media/testimonial_watermark.png": "/Digital-Marketing/static/media/testimonial_watermark.29dcef5a57ee832b6583.png",
+    "static/media/slick.svg": "/Digital-Marketing/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Digital-Marketing/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Digital-Marketing/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Digital-Marketing/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Digital-Marketing/index.html",
+    "main.85463571.css.map": "/Digital-Marketing/static/css/main.85463571.css.map",
+    "main.98f90bc7.js.map": "/Digital-Marketing/static/js/main.98f90bc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aea4ee5.css",
-    "static/js/main.27adc278.js"
+    "static/css/main.85463571.css",
+    "static/js/main.98f90bc7.js"
   ]
 }
