@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/github.io/Digital-Marketing/static/css/main.2aea4ee5.css",
-    "main.js": "/github.io/Digital-Marketing/static/js/main.51285976.js",
+    "main.js": "/github.io/Digital-Marketing/static/js/main.68e57da8.js",
     "static/media/HeaderImage.png": "/github.io/Digital-Marketing/static/media/HeaderImage.0c63d9dda19d5c7d8616.png",
     "static/media/HR_current_Line.png": "/github.io/Digital-Marketing/static/media/HR_current_Line.755262f005cf4147c0fe.png",
     "static/media/communityimage.png": "/github.io/Digital-Marketing/static/media/communityimage.887b22721b0fc5d75391.png",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/github.io/Digital-Marketing/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/github.io/Digital-Marketing/index.html",
     "main.2aea4ee5.css.map": "/github.io/Digital-Marketing/static/css/main.2aea4ee5.css.map",
-    "main.51285976.js.map": "/github.io/Digital-Marketing/static/js/main.51285976.js.map"
+    "main.68e57da8.js.map": "/github.io/Digital-Marketing/static/js/main.68e57da8.js.map"
   },
   "entrypoints": [
     "static/css/main.2aea4ee5.css",
-    "static/js/main.51285976.js"
+    "static/js/main.68e57da8.js"
   ]
 }
