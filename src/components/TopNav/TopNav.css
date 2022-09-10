@@ -19,7 +19,7 @@ a {
   margin-top: 1.5rem;
   margin-inline: auto;
   background-color: white;
-  padding: 10px 140px 25px 140px;
+  padding: 10px 170px 25px 170px;
   z-index: 30;
 }
 @media screen and (max-width: 1000px) {
