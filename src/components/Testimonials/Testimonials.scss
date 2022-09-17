@@ -94,10 +94,10 @@ h1 {
             position: relative;
             transform: scale(.9);
 
-            @media screen and (min-width:920px) {
+            // @media screen and (min-width:920px) {
 
-                transform: scale(.9);
-            }
+            //     transform: scale(.9);
+            // }
 
             position: relative;
 
@@ -159,6 +159,7 @@ h1 {
 
         @media screen and (max-width:920px) {
             margin: 0 10px -40px 10px;
+
         }
 
     }

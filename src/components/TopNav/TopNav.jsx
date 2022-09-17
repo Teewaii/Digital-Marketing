@@ -39,6 +39,7 @@ export default function TopNav() {
                             <Link to='#'>
                                 About
                             </Link>
+
                             <ul className='secAbout'>
 
                                 <li>
@@ -73,9 +74,9 @@ export default function TopNav() {
                 <div className="newUser">
                     <ul className="Seclinks">
                         <li>
-                            <NavLink to='#'>
+                            <Link to='#'>
                                 Sign In
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
                             <Link to='signup' spy={true} smooth={true} offset={-150} duration={500}>

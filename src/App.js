@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import useState from 'react';
 import './App.css';
 import Clients from './components/Clients/Clients';
@@ -17,13 +17,14 @@ function App() {
   return (
     <>
 
-      < TopNav />
+
+
+      <TopNav />
       <Header />
       <Clients />
       <Value />
       <Users />
       <Testimonials />
-      <FAQ />
       <Subscribe />
       <FAQ />
       <Signup />
