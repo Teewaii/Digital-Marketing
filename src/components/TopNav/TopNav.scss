@@ -143,9 +143,9 @@ a {
                         }
                     }
 
-                    &:hover>.Seclinks {
-                        background-color: red;
-                    }
+                    // &:hover>.Seclinks {
+                    //     background-color: red;
+                    // }
                 }
 
                 @media screen and (max-width:920px) {
@@ -195,7 +195,6 @@ a {
     #close {
         color: white;
     }
-
 
 
     .secAbout {

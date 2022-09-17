@@ -36,7 +36,7 @@ export default function TopNav() {
                 <div className="mainNav">
                     <ul className="Navlinks">
                         <li className='parentList'>
-                            <Link to='#'>
+                            <Link to='#' >
                                 About
                             </Link>
 

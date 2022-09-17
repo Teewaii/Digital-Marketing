@@ -116,9 +116,6 @@ a {
 .navBar .container_nav .newUser .Seclinks li:nth-child(2) a {
   color: white;
 }
-.navBar .container_nav .newUser .Seclinks li:hover > .Seclinks {
-  background-color: red;
-}
 @media screen and (max-width: 920px) {
   .navBar .container_nav .newUser .Seclinks {
     justify-content: center;
