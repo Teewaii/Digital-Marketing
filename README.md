@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a just a personal project for self development and it was built using React js and Tailwindcss. It also fetcthes data via json placeholder API for the testimonial section.
 
 ## Available Scripts
 
